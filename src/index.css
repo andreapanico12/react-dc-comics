@@ -1,0 +1,184 @@
+*{
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+  min-height: 100vh
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 118px;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav li a{
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  position: relative;
+}
+.nav li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 64px;
+  width: 0;
+  height: 3px;
+  background-color: #0077ff;
+  
+}
+
+.nav li a:hover::after {
+  width: 100%;
+}
+
+.nav li a:hover{
+  color: #0077ff;
+  
+}
+
+
+/* Main */
+.content {
+  padding: 50px;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+/* Blue Section */
+.blue-section {
+  display: flex;
+  height: 155px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #0077ff;
+  color: white;
+  text-align: center;
+}
+
+.blue-item a {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  gap: 10px;
+}
+
+.blue-item a img {
+  height: 50px;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #1c1c1c;
+  color: white;
+  height: 100%;
+  background-image: url(../src/assets/imgs/footer-bg.jpg);
+  background-size: cover;
+}
+
+.footer-links{
+  display: flex;
+  padding-top: 45px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  background-image:url(/logos/dc-logo-bg.png);
+  background-repeat: no-repeat;
+  background-position: right,center;
+}
+.footer-menus{
+  margin-left: 30px;
+}
+
+.footer-links h3 {
+  margin-bottom: 10px;
+  font-weight: 800;
+  
+}
+
+.footer-links ul {
+  list-style: none;
+  padding-bottom: 15px;
+  color: #959595;
+}
+
+.footer-links ul li a:hover{
+  color: white;
+}
+
+.footer-links li {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.footer-media{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 45px;
+  background-color: #1c1c1c;
+
+}
+
+.footer-signup {
+  text-align: center;
+}
+.footer-signup button {
+  padding: 10px 20px;
+  color: white;
+  background-color: #1c1c1c;
+  border: solid, 2px, #0077ff;
+  cursor: pointer;
+}
+
+.footer-signup button:hover{
+  text-decoration: underline;
+}
+
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-style: bold;
+  color: #0077ff;
+  font-weight: 800;
+}
+
+.social-icons{
+  margin-left: 20px;
+}
+
+.social-icons a img {
+  height: 40px;
+  padding: 0 5px;
+}
