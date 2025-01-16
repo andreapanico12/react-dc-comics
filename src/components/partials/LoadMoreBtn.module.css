@@ -1,0 +1,27 @@
+.loadMoreContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.loadMoreButton {
+  background-color: #0078FF;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 185px;
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.loadMoreButton:hover {
+  background-color: #005FCC;
+}
+
+.loadMoreButton:active {
+  background-color: #004BA0;
+}
+

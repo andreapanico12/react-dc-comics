@@ -69,10 +69,70 @@ a {
 
 /* Main */
 .content {
-  padding: 50px;
   background-color: #1c1c1c;
   color: white;
 }
+
+/* Jumbotron Styles */
+.jumbotron {
+  position: relative;
+  background-image: url('./assets/imgs/jumbotron.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  color: white;
+
+}
+.currentSeriesTitle {
+  position: absolute;
+  bottom: -12%; 
+  left: 10%;
+  transform: translate(-50%, -50%); 
+  background-color: #0078FF; 
+  color: white; 
+  padding: 12px 25px;
+  font-size: 24px; 
+  font-weight: bold;
+  text-transform: uppercase; 
+  z-index: 10;
+}
+
+
+/* Card Grid Styles */
+.card-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 35px;
+
+}
+
+.card {
+  text-align: center;
+  color: white;
+  margin: 0 15px;
+  margin-top: 15px;
+  width: 188px;
+  height: 270px;
+
+}
+
+.card-image {
+  width: 100%;
+  height: 188px;
+  object-fit: cover;
+}
+
+.card-title {
+text-align: start;
+text-transform: uppercase;
+font-weight: 300;
+padding: 25px 0;
+font-size: 15px;  
+}
+
+
 
 /* Blue Section */
 .blue-section {

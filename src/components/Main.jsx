@@ -1,8 +1,13 @@
+import Jumbotron from "./partials/Jumbotron"
+import CardGrid from "./partials/CardGrid"
 
-const Main = () => {
+const Main = (props) => {
+  
+  const comics = props.comics
   return(
     <main className="content">
-    <h2>--&gt; Content goes here &lt;--</h2>
+      <Jumbotron/>
+      <CardGrid comics={comics}/>
 
   </main>
   )
